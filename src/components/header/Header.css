@@ -1,0 +1,89 @@
+.header {
+    background-color: var(--color-yellow);
+    padding: 1rem;
+    color: var(--color-red);
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-orange);
+}
+
+.search-wrapper {
+    display: flex;
+    width: 33%;
+    border-radius: 0.2rem;
+}
+
+.search-input {
+    max-width: 65%;
+    background-color: var(--color-white);
+    padding: 0.3rem;
+    border: 1px solid var(--color-red);
+    border-right: none;
+    outline: none;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.login-nav-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    width: 33%;
+}
+
+.header-nav {
+    display: none;
+}
+
+.header-nav-list {
+    display: flex;
+    gap: 2rem;
+    width: 33%;
+}
+
+.header-nav-list-item {
+    cursor: pointer;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.search {
+    padding: 0.3rem;
+    background-color: var(--color-main);
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+    border-top-right-radius: 0.2rem;
+    border-bottom-right-radius: 0.2rem;
+}
+
+.normal {
+    color: inherit;
+    background-color: inherit;
+    font-size: 1.2rem;
+}
+
+.login {
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.login>span {
+    margin-left: 0.1rem;
+}
+
+@media screen and (min-width: 765px) {
+    .header-nav {
+        display: flex;
+    }
+
+    .nav-burger {
+        display: none;
+    }
+}
